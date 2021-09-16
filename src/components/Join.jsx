@@ -1,23 +1,10 @@
 import React, { useState } from 'react';
 import Avatar from 'boring-avatars';
-import getToken from '../utils/getToken';
-import { useHMSActions } from '@100mslive/hms-video-react';
 import Socials from './Socials';
 
 const Join = () => {
-  const actions = useHMSActions();
   const [username, setUsername] = useState('');
-  const joinRoom = () => {
-    getToken('speaker').then((t) => {
-      actions.join({
-        userName: username || 'Anonymous',
-        authToken: t,
-        settings: {
-          isAudioMuted: true,
-        },
-      });
-    });
-  };
+  const joinRoom = () => {};
   return (
     <div className='flex flex-col items-center justify-center h-screen bg-brand-100'>
       <Avatar size={100} variant='pixel' name={username} />

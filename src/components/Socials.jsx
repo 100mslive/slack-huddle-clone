@@ -11,7 +11,7 @@ const Socials = () => {
       </a>
       <a
         className='underline text-blue-500'
-        href='https://github.com/100mslive/slack-huddle-clone/'
+        href='https://www.100ms.live/blog/building-slack-huddle-clone'
       >
         Blog
       </a>
