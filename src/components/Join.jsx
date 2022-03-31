@@ -15,6 +15,7 @@ const Join = () => {
         settings: {
           isAudioMuted: true,
         },
+        initEndpoint : process.env.REACT_APP_HMS_INIT_PEER_ENPOINT || undefined
       });
     });
   };
